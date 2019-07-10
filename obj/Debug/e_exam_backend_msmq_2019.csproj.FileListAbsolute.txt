@@ -75,3 +75,8 @@ C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam
 C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\obj\Debug\e_exam_backend_msmq_2019.csproj.CopyComplete
 C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\obj\Debug\e_exam_backend_msmq_2019.dll
 C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\obj\Debug\e_exam_backend_msmq_2019.pdb
+C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\bin\NLog.config
+C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\bin\NLog.dll
+C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\bin\NLog.xml
+C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\bin\NLog.Web.dll
+C:\Users\dev.awesome.th\Desktop\DOT-exam\program\e_exam_backend_msmq_2019\e_exam_backend_msmq_2019\bin\NLog.Web.xml

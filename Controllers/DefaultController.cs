@@ -1,39 +1,27 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Web;
+using System.Web.Mvc;
 
 namespace e_exam_backend_msmq_2019.Controllers
 {
-    public class DefaultController : ApiController
+    public class DefaultController : Controller
     {
-        // GET: api/Default
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private Logger log = LogManager.GetLogger("Default");
 
-        // GET: api/Default/5
-        public string Get(int id)
+        // GET: Default
+        [HttpGet]
+        [Route("Index")]
+        public ActionResult Index()
         {
-            return "value";
-        }
+            log.Debug("OK");
 
-        // POST: api/Default
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Default/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Default/5
-        public void Delete(int id)
-        {
+            return Json(new
+            {
+                sucess = true,
+            }, JsonRequestBehavior.AllowGet);
         }
     }
 }
