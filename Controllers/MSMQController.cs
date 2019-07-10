@@ -13,11 +13,14 @@ using e_exam_backend_msmq_2019.Models.Responses.MSMQ.Count;
 using e_exam_backend_msmq_2019.Extensions;
 using e_exam_backend_msmq_2019.Models.Responses.MSMQ.Purge;
 using e_exam_backend_msmq_2019.Models.Responses.Defaults;
+using NLog;
 
 namespace e_exam_backend_msmq_2019.Controllers
 {
     public class MSMQController : Controller
     {
+        private Logger log = LogManager.GetLogger("MSMQ");
+
         private NameValueCollection configuration { get; set; }
 
         private BaseResponse responseModel { get; set; } = new BaseResponse();
@@ -110,6 +113,8 @@ namespace e_exam_backend_msmq_2019.Controllers
                 };
             }
 
+            log.Trace(JsonConvert.SerializeObject(responseModel));
+
             return Json(responseModel, JsonRequestBehavior.AllowGet);
         }
 
@@ -181,6 +186,8 @@ namespace e_exam_backend_msmq_2019.Controllers
                 };
             }
 
+            log.Trace(JsonConvert.SerializeObject(responseModel));
+
             return Json(responseModel, JsonRequestBehavior.AllowGet);
         }
 
@@ -251,6 +258,8 @@ namespace e_exam_backend_msmq_2019.Controllers
                     complierMessage = complierMessage
                 };
             }
+
+            log.Trace(JsonConvert.SerializeObject(responseModel));
 
             return Json(responseModel.response, JsonRequestBehavior.AllowGet);
         }
